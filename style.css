@@ -1,0 +1,10 @@
+.card-header {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(247, 252, 251);
+    height: 50px;
+}
+
+.card-footer {
+    background-color: rgb(247, 252, 251);
+}

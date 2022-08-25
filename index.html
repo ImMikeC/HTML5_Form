@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="card float-start">
+        <div class="card-header">
+            <p><strong>Payment form example</strong> </p>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="alert alert-danger w-70 my-4 mx-4" role="alert">
+                    Some fields are missing
+                  </div>
+            </div>
+        </div>
+        <div class="card-body">
+
+            <form class="row g-3">
+                <div class="col-md-5">
+                    <label for="inputCardNumber" class="form-label float-start">Card #</label>
+                    <input type="text" class="form-control" id="inputCardNumber" placeholder="XXXXXXXXXXXX">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputCVC" class="form-label float-start">CVC #</label>
+                    <input type="text" class="form-control" id="inputCVC" placeholder="0000">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputAmount" class="form-label float-start">Amount</label>
+                <div class="input-group mb-3">                   
+                    <span><strong>$</strong></span>                    
+                    <input type="number" class="form-control" placeholder="Amount">
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputFirstName" class="form-label float-start">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputLastName" class="form-label float-start">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label float-start">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputState" class="form-label float-start">State</label>
+                    <select class="form-select" id="inputState">
+                        <option selected>Pick a state</option>
+                        <option value="1">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Arizona</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputpostalCode" class="form-label float-start">Postal Code</label>
+                    <input type="text" class="form-control" id="inputpostalCode">
+                </div>
+                
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="container">
+                            <div class="d-flex my-2">
+                                We accept:
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="container">
+                            <div class="alert alert-dark float-start my-1 mx-1 py-1 px-1" role="alert">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fa-2x"></i></label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa fa-2x"></i></label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club fa-2x"></i></label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-amex fa-2x"></i></label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>
+
+                    <div class="col-md-6">
+                        <div class="textarea">
+                            <label for="mensaje" class="float-start"><strong>Message</strong></label>
+                            <textarea class="form-control" id="mensaje" style="height: 100px"></textarea>
+                            <label for="mensaje" class="float-start text-secondary">Add any notes here.</label>
+                        </div>
+                    </div>    
+
+                    
+
+            </form>
+
+        </div>
+        <div class="card-footer d-flex justify-content-end">
+            <a href="#" class="btn btn-secondary">Cancel</a>
+            &nbsp
+            <a href="#" class="btn btn-primary">Send</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
